@@ -1,20 +1,23 @@
-function toaddf() { //function to open the pop form when click to add a todo.
+function toaddf() {
+  //function to open the pop form when click to add a todo.
   let form_add = document.getElementById("toadd");
   form_add.style.display = "block";
 }
-function hide() { //function to hide the pop add todo form.
+function hide() {
+  //function to hide the pop add todo form.
   let form_add = document.getElementById("toadd");
   form_add.style.display = "none";
 }
-function toupdatef() { //function to open the pop form when click to update a todo.
+function toupdatef() {
+  //function to open the pop form when click to update a todo.
   let form_add = document.getElementById("toupdate");
   form_add.style.display = "block";
 }
-function hide_update() { //function to hide the pop update todo form.
+function hide_update() {
+  //function to hide the pop update todo form.
   let form_add = document.getElementById("toupdate");
   form_add.style.display = "none";
 }
-
 
 let p;
 //this function fetch all the todo's added till now and add them in html to show the todo list.
@@ -25,6 +28,9 @@ function fetch_all() {
     beforeSend: function () {
       $("#list-loader").show();
     },
+    contentType: false,
+    cache: false,
+    processData: false,
     success: function (data) {
       let t = document.getElementById("list");
       let c = document.getElementById("content");
@@ -79,6 +85,9 @@ $("#add").on("submit", function (e) {
       $("#add-loader").show();
       $("#add :input").prop("disabled", true);
     },
+    contentType: false,
+    cache: false,
+    processData: false,
     success: function (data) {
       hide();
       fetch_all();
@@ -97,7 +106,7 @@ $("#add").on("submit", function (e) {
 // to the html to show.
 function get_desc(i, key) {
   for (var key in p[0][i]) {
-    // console.log(key,data[i][key]); 
+    // console.log(key,data[i][key]);
     document.getElementById("content").innerHTML =
       '<div class="heading" id="heading"><h1>' +
       key +
@@ -122,6 +131,9 @@ function delete_todo(i) {
         brand.style.display = "none";
         load.style.display = "block";
       },
+      contentType: false,
+      cache: false,
+      processData: false,
       contentType: "application/json",
       dataType: "json",
       success: function (data) {
@@ -157,6 +169,9 @@ $("#update").on("submit", function (e) {
       $("#update-loader").show();
       $("#update :input").prop("disabled", true);
     },
+    contentType: false,
+    cache: false,
+    processData: false,
     success: function (data) {
       hide_update();
       fetch_all();
