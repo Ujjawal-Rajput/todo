@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.side-section {
+    width: 20vw;
+    height: 100%;
+    position: fixed;
+    
+}
+
+.account {
+    height: 10%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.all-list {
+    position: fixed;
+    height: 90%;
+    width: 20%;
+    overflow: scroll;
+}
+.all-list h4{
+    /* justify-content: left; */
+    font-size: 20px;
+    /* padding-left: 10px; */
+    padding-top: 10px;
+}
+
+.list {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /*i was here*/
+    padding: 0px 10px;
+    padding-top: 10px;
+    overflow-x: hidden;
+    /* overflow: scroll; */
+    /* height: 100%; */
+    /* position: fixed; */
+}
+
+.single-todo {
+    border: 2px solid black;
+    /* background-color: grey; */
+    border-radius: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.single-todo:hover {
+    background-color:black;
+    color: white;
+}
+
+.single-todo p {
+    padding: 10px;
+}
+
+.profile{
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.account h2{
+    padding-left: 10px;
+}
+
+.main-section {
+    background-color: white;
+    width: 80vw;
+    margin-left: 20vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    align-content: center;
+    /* background-color: blue; */
+    width: 60%;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+.heading{
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.heading p{
+    font-size: 13px;
+    color: grey;
+    padding-top: 10px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: scroll;
+}
+.add{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+.color-block {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 100;
+}
+
+.form-add{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 101;
+    width: 550px;
+    height: 400px;
+    background-color: white;
+    /* text-align: center; */
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input , .form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #4CAF50; */
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-group textarea{
+    width: 95%;
+    height: 100px;
+  }
+
+  .inner-form{
+    padding: 50px;
+  }
+
+.add-loader{
+    width: 13px;
+    height: 13px;
+    display: none;
+}
+
+.list-loader{
+    width: 16px;
+    height: 16px;
+    display: none;
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+.popup_mobile{
+    display: none;
+    width: 100%;
+}
+
+.delete,.update{
+    width: 20px;
+    height: 20px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.ud-loader{
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+
+.account::-webkit-scrollbar {
+    display: none;
+  }
+.single-todo::-webkit-scrollbar {
+    display: none;
+  }
+.head::-webkit-scrollbar {
+    display: none;
+  }
+
+@media (max-width:690px) {
+    .content{
+        width: 70%;
+        height: 500px;
+        overflow: scroll;
+    }
+    .p_desc{
+        height: 248px;
+        overflow: scroll;
+    }
+}

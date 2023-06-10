@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="side-section">
+            <div class="account">
+                <img class="profile" id="profile" src="{{url_for('static',filename='img/profile.png')}}" />
+                <h2>Hi, {{username}}</h2>
+            </div>
+            <div class="all-list">
+                <div class="head">
+                    <h4 id="brands">ToDo's</h4>
+                    <img class="ud-loader" id="ud-loader" src="{{url_for('static',filename='img/loading.gif')}}" />
+                    <button class="add" onclick="toaddf()">
+                        <h2>+</h2>
+                    </button>
+                </div>
+                <div class="list" id="list">
+                    <img class="list-loader" id="list-loader" src="{{url_for('static',filename='img/loading.gif')}}" />
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="main-section">
+            <div class="content" id="content">
+                <p>Click on any todo to see description.</p>
+                <!-- <div class="heading">
+                    <h1>Todays task headline</h1>
+                    <p>08-06-2023 , 19:35:00</p>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Vel, autem. Veniam ipsa dicta tenetur beatae voluptatem doloremque sunt doloribus cupiditate
+                        nihil esse
+                        quos accusamus dignissimos corporis, obcaecati nostrum. Beatae, reiciendis!</p>
+                </div> -->
+            </div>
+        </section>
+        
+    </div>
+
+
+
+
+
+    <div class="addtodo" id="toadd" style="display: none;">
+        <form id="add" class="form-add">
+            <div class="inner-form" id="inner-form">
+                <div class="form-group">
+                    <label for="title">Add title</label>
+                    <input type="text" id="title" name="title" placeholder="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea type="text" id="description" name="description" placeholder="Enter description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">
+                        <img class="add-loader" id="add-loader" src="{{url_for('static',filename='img/loading.gif')}}" />
+                        Add
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="color-block" onclick="hide()"></div>
+    </div>
+
+
+    <div class="updatetodo" id="toupdate" style="display: none;">
+        <form id="update" class="form-add">
+            <div class="inner-form">
+                <div class="form-group" style="display: none;">
+                    <label for="who">for</label>
+                    <input type="text" id="who" value="" name="who">
+                </div>
+                <div class="form-group">
+                    <label for="title">Add title</label>
+                    <input type="text" id="utitle" name="utitle" placeholder="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea type="text" id="udescription" name="udescription" placeholder="Enter description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">
+                        <img class="add-loader" id="update-loader" src="{{url_for('static',filename='img/loading.gif')}}" />
+                        Add
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="color-block" onclick="hide_update()"></div>
+    </div>
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="{{url_for('static',filename='js/home.js')}}"></script>
+</html>

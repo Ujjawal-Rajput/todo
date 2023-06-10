@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../static/css/login-signup.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <h1>Login</h1>
+    <form id="login">
+      <div class="form-group">
+        <label for="username">Email</label>
+        <input type="text" id="login_email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="login_password" name="password" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">
+          <img class="loader" id="loader" src="{{url_for('static',filename='img/loading.gif')}}" />
+          Login</button>
+        <div class="msg-div" id="msg-div">
+          <p id="msg"></p>
+        </div>
+        <div style="padding-top: 15px;">
+          <p>Create an account. <a style="cursor: pointer;color:blue" onclick="show_signup()"> signup</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="signup-container" id="signup-container" style="display: none;">
+    <h1>Sign Up</h1>
+    <form id="signup">
+      <div class="signup-form-group">
+        <label for="username">Username</label>
+        <input type="text" id="signup_username" name="username" placeholder="Create username" required>
+      </div>
+      <div class="signup-form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="signup-form-group">
+        <label for="password">Password</label>
+        <input type="password" id="signup_password" name="password" placeholder="Generate password" required>
+      </div>
+      <div class="signup-form-group">
+        <button type="submit">
+          <img class="loader" id="loader" src="{{url_for('static',filename='img/loading.gif')}}" />
+          Sign Up</button>
+        <div class="msg-div2" id="msg-div2">
+          <p id="msg2"></p>
+        </div>
+        <div style="padding-top: 15px;">
+          <p>Alreay have an account? <a style="cursor: pointer;color:blue" onclick="show_login()"> Login</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="{{url_for('static',filename='js/index.js')}}"></script>
+
+</html>
