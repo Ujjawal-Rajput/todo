@@ -6,9 +6,7 @@ It is a TODO web application works on the flask framework of python. this todo w
 
 it shows how it looks like :
 
-
-
-![Logo](https://im5.ezgif.com/tmp/ezgif-5-f1cf3b7453.gif)
+<a href="https://ibb.co/V2qb4Xg"><img src="https://i.ibb.co/nzL4Jh7/Screenshot-181.png" alt="Screenshot-181" border="0" /></a>
 
 
 ## Run Locally
