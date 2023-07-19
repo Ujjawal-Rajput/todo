@@ -23,9 +23,9 @@ Clone the project
 
 ## Screenshots
 
-![App Screenshot](https://im5.ezgif.com/tmp/ezgif-5-5a2e21183d.gif)
-![App Screenshot](https://im5.ezgif.com/tmp/ezgif-5-46ba77829c.gif)
-![App Screenshot](https://im5.ezgif.com/tmp/ezgif-5-eb109493ff.gif)
-![App Screenshot](https://im5.ezgif.com/tmp/ezgif-5-dcf4929b03.gif)
-![App Screenshot](https://im5.ezgif.com/tmp/ezgif-5-c9fa701be0.gif)
+![App Screenshot](https://ibb.co/h7WVwQp)
+![App Screenshot](https://ibb.co/kXq7QLJ)
+![App Screenshot](https://ibb.co/3fgXsGy)
+![App Screenshot](https://ibb.co/V2qb4Xg)
+![App Screenshot](https://ibb.co/jgRcKQS)
 
