@@ -23,9 +23,9 @@ Clone the project
 
 ## Screenshots
 
-![App Screenshot](https://ibb.co/h7WVwQp)
-![App Screenshot](https://ibb.co/kXq7QLJ)
-![App Screenshot](https://ibb.co/3fgXsGy)
-![App Screenshot](https://ibb.co/V2qb4Xg)
-![App Screenshot](https://ibb.co/jgRcKQS)
+(https://ibb.co/h7WVwQp)
+(https://ibb.co/kXq7QLJ)
+(https://ibb.co/3fgXsGy)
+(https://ibb.co/V2qb4Xg)
+(<a href="https://ibb.co/jgRcKQS"><img src="https://i.ibb.co/kQ1Rnwt/Screenshot-182.png" alt="Screenshot-182" border="0" /></a>)
 
